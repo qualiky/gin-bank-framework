@@ -7,5 +7,7 @@ sql:
     go: 
       package: "simplebank"
       out: "./db/sqlc/"
+      emit_empty_slices: true
+
   rules:
     - sqlc/db-prepare
