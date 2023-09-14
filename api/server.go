@@ -8,12 +8,12 @@ import (
 
 // Server serves HTTP request
 type Server struct {
-	store  *db.Store
+	store  db.Store
 	router *gin.Engine
 }
 
 // NewServer creates an instance of a new HTTP server
-func NewServer(store *db.Store) *Server {
+func NewServer(store db.Store) *Server {
 	server := &Server{store: store}
 	defRouter := gin.Default()
 

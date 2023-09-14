@@ -8,6 +8,7 @@ sql:
       package: "simplebank"
       out: "./db/sqlc/"
       emit_empty_slices: true
+      emit_interface: true
 
   rules:
     - sqlc/db-prepare
